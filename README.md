@@ -1,23 +1,12 @@
 # Metric Learning-based Specific Knowledge Distillation
 
 ## Introduction
-- KM-BERT, a pre-trained language model based on the Korean language, is pre-trained on medical news, textbooks, and research papers, aiming to address downstream tasks in the medical domain.
-- However, emergency department pediatric Electronic Medical Record (EMR) data primarily consist of free-text clinical notes with a substantial amount of code-switching.
-- Simply fine-tuning KM-BERT may not be an effective approach.
-- In this paper, we propose a robust model training method for free-text clinical notes.
-    - Specific Knowledge Distillation based on Metric Learning
+The utilization of pre-trained language models, fine-tuned to address specific downstream tasks, is a common approach in natural language processing (NLP). However, acquiring domain-specific knowledge through fine-tuning alone is challenging. Traditional methods involve pre-training language models with vast amounts of domain-specific data before fine-tuning for particular tasks. This paper investigates the emergency/non-emergency classification task using Electronic Medical Record (EMR) data from a pediatric emergency department (PED) in Korea. Our findings reveal that existing domain-specific pre-trained language models underperform compared to general language models in handling N-Lingual free-text data characteristic of non-English speaking regions. Motivated by these limitations, we propose the Domain Knowledge Transfer methodology, which leverages Knowledge Distillation (KD) to infuse general language models with domain-specific knowledge during fine-tuning.
 
-## Models
-- **Student**
-  - [Kor-Bert](https://huggingface.co/kykim/bert-kor-base)
-  - [KM-Bert](https://github.com/KU-RIAS/KM-BERT-Korean-Medical-BERT)
-- **Teacher**
-  - [Bert-base](https://huggingface.co/bert-base-uncased)
-  - [Multi-lingual Bert](https://huggingface.co/bert-base-multilingual-uncased)
-  - [Clinical Bert](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT)
+This study demonstrates the effective transfer of specialized knowledge between models by defining a general language model as the student and a domain-specific pre-trained model as the teacher. We specifically address the complexities of PED’s EMR data in non-English speaking environments, such as Korea, and show that our method enhances classification performance in these contexts. Our methodology not only outperforms baseline models on Korean PED EMR data but also suggests broader applicability across various professional and technical domains. Future work will focus on extending this methodology to include diverse non-English speaking regions and additional downstream tasks, aiming to develop advanced model architectures through the latest KD techniques.
 
 ## Our Method
-![image](https://github.com/JoSangYeon/Audio_Classifier_Project/assets/28241676/74f61a8f-209c-419e-af3c-959a303b6737)
+![figure_1 - model_architecture](https://github.com/JoSangYeon/DSG-KD/assets/28241676/4cd2f0ea-6888-41ac-bff2-4b4761ad25c7)
 
 
 ## run code
