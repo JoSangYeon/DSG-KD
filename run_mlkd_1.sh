@@ -1,0 +1,3 @@
+CUDA_VISIBLE_DEVICES=1 python main.py --random_seed 17 --epochs 15 --batch_size 32 --method mlkd --student kobert --teacher mbert --bert_lr 1e-4 --classifier_lr 5e-3
+CUDA_VISIBLE_DEVICES=1 python main.py --random_seed 17 --epochs 15 --batch_size 32 --method mlkd --student kmbert --vocab_type S --is_pt False --teacher mbert --bert_lr 1e-4 --classifier_lr 5e-3
+CUDA_VISIBLE_DEVICES=1 python main.py --random_seed 17 --epochs 15 --batch_size 32 --method mlkd --student kmbert --vocab_type S --is_pt False --teacher cbert --bert_lr 1e-4 --classifier_lr 5e-3

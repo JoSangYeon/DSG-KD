@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0 python main.py --random_seed 17 --epochs 10 --batch_size 96 --method base --model kmbert --vocab_type B --is_pt True
+CUDA_VISIBLE_DEVICES=0 python main.py --random_seed 17 --epochs 10 --batch_size 96 --method base --model kmbert --vocab_type S --is_pt True
