@@ -1,4 +1,4 @@
-# Metric Learning-based Specific Knowledge Distillation
+# DSG-KD_ Knowledge Distillation from Domain-Specific to General Language Models
 
 ## Introduction
 The utilization of pre-trained language models, fine-tuned to address specific downstream tasks, is a common approach in natural language processing (NLP). However, acquiring domain-specific knowledge through fine-tuning alone is challenging. Traditional methods involve pre-training language models with vast amounts of domain-specific data before fine-tuning for particular tasks. This paper investigates the emergency/non-emergency classification task using Electronic Medical Record (EMR) data from a pediatric emergency department (PED) in Korea. Our findings reveal that existing domain-specific pre-trained language models underperform compared to general language models in handling N-Lingual free-text data characteristic of non-English speaking regions. Motivated by these limitations, we propose the Domain Knowledge Transfer methodology, which leverages Knowledge Distillation (KD) to infuse general language models with domain-specific knowledge during fine-tuning.
